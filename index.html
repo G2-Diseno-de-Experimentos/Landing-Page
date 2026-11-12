@@ -631,6 +631,21 @@
 </a>
 <script src="./i18n.js"></script>
 <script src="./script.js"></script>
+
+<!-- ElectroLink: seguimiento de interacciones -->
+<script>
+  document.getElementById('login-btn').addEventListener('click', function () {
+    window._paq = window._paq || [];
+
+    window._paq.push([
+      'trackEvent',
+      'Navigation',
+      'login_button_clicked',
+      'Landing Page'
+    ]);
+  });
+</script>
+
 </body>
 
 </html>
